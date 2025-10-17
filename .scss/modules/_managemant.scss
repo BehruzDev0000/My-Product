@@ -7,8 +7,6 @@
     padding-right: 10px;
 
 }
-// .management__left-wrapper {
-// }
 .management-text-main {
      @include TextStyle($color:$clr-dark-black,$size:16px,$weight:600,$height:100%,$letter:0px,$bottom:8px)
 }
