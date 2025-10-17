@@ -34,7 +34,7 @@
 }
 @media (max-width:930px){
     .management{
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -49,8 +49,8 @@
     padding: 0;
 }
 .management__right-wrapper>img{
-    width: 449px;
-    height: 375px;
+    max-width: 449px;
+    max-height: 375px;
 }
 }
 @media (max-width:630px){
@@ -75,7 +75,7 @@
     padding: 0;
 }
 .management__right-wrapper>img{
-    width: 349px;
-    height: 306px;
+    max-width: 349px;
+    max-height: 306px;
 }
 }

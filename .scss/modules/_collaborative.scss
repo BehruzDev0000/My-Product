@@ -29,3 +29,57 @@
 .collaborative__right-wrapper {
     max-width: 541px;
 }
+@media (max-width:950px){
+    .collaborative{
+        margin-bottom: 100px;
+        flex-direction: column;
+        gap: 75px;
+        align-items: center;
+        justify-content: start;
+    }
+    .collaborative__left-wrapper {
+    max-width:80%;
+}
+.collaborative__text-main {
+    @include TextStyle($color:$clr-dark-black,$size:16px,$weight:600,$height:100%,$letter:0px,$bottom:8px)
+}
+.collaborative__title {
+    @include TextStyle($color:$clr-dark-black,$size:32px,$weight:700,$height:100%,$letter:0px,$bottom:16px)
+}
+.collaborative__text {
+    @include TextStyle($color:$clr-dark-black,$size:16px,$weight:400,$height:26px,$letter:0px,$bottom:16px)
+}
+.collaborative__list {
+    @include Display($items:center,$justify:start,$gap:15px);
+    flex-direction: column;
+}
+
+.collaborative__right-wrapper {
+    max-width: 80%;
+}
+}
+@media (max-width:630px){
+     .collaborative{
+        margin-bottom: 67px;
+        flex-direction: column-reverse;
+        gap: 50px;
+        align-items: center;
+        justify-content: start;
+    }
+    .collaborative__left-wrapper {
+    max-width:100%;
+}
+
+
+.collaborative__list {
+    @include Display($items:start,$justify:center,$gap:16px);
+}
+
+.collaborative__right-wrapper {
+    max-width: 100%;
+}
+.collaborative__right-wrapper>img{
+    max-width: 350px;
+    height: 291px;
+}
+}

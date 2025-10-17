@@ -36,16 +36,16 @@
     text-decoration: 1px solid $clr-teal;
 }
 .hero__right-wrapper{
-    width: 600px;
+    max-width: 600px;
 }
 @media (max-width: 1005px){
     .hero{ 
         gap: 40px;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
     }
     .hero__left-wrapper {
-        max-width: 80%;
+        width: 80%;
     }
 }
 @media (max-width:680px){
@@ -67,12 +67,9 @@
     .hero__text {
         @include TextStyle($color:$clr-dark-black,$size:18px,$weight:400,$height:28px,$letter:0px,$bottom:32px)
     }
-    .hero__right-wrapper{
-        text-align: center;
-    }
     .hero__right-wrapper>img{
-        width: 338px;
-        height: 310px;
+        max-width: 338px;
+        max-height: 310px;
     }
     .hero__button-get-started {
         padding: 15px 25px;
