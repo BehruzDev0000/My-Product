@@ -1,0 +1,30 @@
+.customer-section {
+    margin-bottom: 150px;
+}
+.customer {
+    @include Display($items:center,$justify:space-between,$gap:94px)
+}
+// .customer__left-wrapper {
+// }
+.customer__right-wrapper{
+    max-width: 486px;
+}
+.customer__text-main {
+    @include TextStyle($color:$clr-dark-black,$size:16px,$weight:600,$height:100%,$letter:0px,$bottom:8px)
+}
+.customer__title {
+    @include TextStyle($color:$clr-dark-black,$size:32px,$weight:700,$height:100%,$letter:0px,$bottom:23px)
+}
+.customer-text {
+    @include TextStyle($color:$clr-dark-black,$size:16px,$weight:400,$height:26px,$letter:0px,$bottom:30px)
+}
+.customer__list {
+    @include Display($items:center,$justify:start,$gap:30px);
+    flex-direction: column;
+}
+.customer__item {
+    @include Display($items:center,$justify:start,$gap:30px)
+}
+.customer__item-text {
+    @include TextStyle($color:$clr-dark-black,$size:16px,$weight:400,$height:26px,$letter:0px,$bottom:0px)
+}

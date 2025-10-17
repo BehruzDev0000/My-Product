@@ -1,0 +1,102 @@
+.product-section{
+    margin-bottom: 150px;
+}
+.product{
+    padding-bottom: 90px;
+}
+.product__title_wrapper {
+    max-width: 539px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 66px;
+}
+.product__title {
+    @include TextStyle($color:$clr-dark-black,$size:32px,$weight:700,$height:100%,$letter:0px,$bottom:45px)
+}
+
+.product__list {
+     @include Display($items:start,$justify:space-between,$gap:43px);
+     margin-bottom: 34px;
+}
+.product__item{
+    max-width:240px ;
+    text-align: start;
+}
+.product__item-img{
+    margin-bottom: 30px;
+}
+.product__item-title {
+    @include TextStyle($color:$clr-dark-black,$size:22px,$weight:600,$height:100%,$letter:0px,$bottom:13px)
+}
+.product__item-text {
+    @include TextStyle($color:$clr-dark-black,$size:16px,$weight:400,$height:26px,$letter:0px,$bottom:0px)
+}
+.product__btn-wrapper {
+    margin: 0 auto;
+    text-align: center;
+}
+.product__button {
+    @include BtnStyle($padding:15px 32px,$bg-color:$clr-teal,$clr:$clr-white,$border:1px solid transparent,$radius:4px);
+    @include TextStyle($color:$clr-white,$size:16px,$weight:700,$height:100%,$letter:0px,$bottom:0px);
+     &:hover {
+        background-color: transparent;
+        border: 1px solid $clr-teal;
+        color:$clr-teal;
+
+    }
+}
+
+@media (max-width:900px){
+    .product-section{
+        margin-bottom: 100px;
+    }
+    .product{
+    padding-bottom: 43px;
+    }
+    .product__title_wrapper{
+        width: 50%;
+    }
+    .product__list{
+        gap: 37px;
+        flex-wrap: wrap;
+    }
+    .product__item{
+        width: 50%;
+    }
+    .product__item-img{
+        margin-bottom: 27px;
+    }
+    .product__item-title{
+        margin-bottom: 10px;
+    } 
+}
+@media (max-width:580px){
+    .product-section{
+        margin-bottom: 100px;
+    }
+    .product{
+        padding-top: 16px;
+        padding-bottom: 43px;
+    }
+    .product__title_wrapper{
+        width: 80%;
+    }
+    .product__list{
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        flex-direction: column;
+    }
+    .product__item{
+        width: 70%;
+    }
+    .product__item-img{
+        margin-bottom: 24px;
+    }
+    .product__item-title{
+        margin-bottom: 8px;
+    } 
+    .product__item{
+        text-align: center;
+    }
+}

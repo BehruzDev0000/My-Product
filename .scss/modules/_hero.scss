@@ -1,0 +1,80 @@
+.hero-section{
+    margin-bottom: 114px;
+}
+.hero {         
+  @include Display($items:center,$justify:start,$gap:20px)  ;
+      
+}
+
+.hero__left-wrapper {
+    max-width: 458px;
+}
+.hero__title {
+    @include TextStyle($color:$clr-dark-black,$size:40px,$weight:700,$height:60px,$letter:0px,$bottom:18px)
+}
+.hero__text {
+    @include TextStyle($color:$clr-dark-black,$size:18px,$weight:400,$height:28px,$letter:0px,$bottom:45px)
+}
+.hero__buttons {
+    @include Display($items:center,$justify:start,$gap:30px)
+}
+.hero__button-get-started {
+    @include BtnStyle($padding:15px 41px,$bg-color:$clr-teal,$clr:$clr-white,$border:1px solid transparent,$radius:4px);
+    @include TextStyle($color:$clr-white,$size:16px,$weight:700,$height:100%,$letter:0px,$bottom:0px);
+     &:hover {
+        background-color: transparent;
+        border: 1px solid $clr-teal;
+        color:$clr-teal;
+
+    }
+}
+.hero__button-watch-video {
+     @include Display($items:center,$justify:start,$gap:2.5px)
+}
+.hero__button-watch-video>span{
+    @include TextStyle($color:$clr-teal,$size:16px,$weight:600,$height:100%,$letter:0px,$bottom:0px);
+    text-decoration: 1px solid $clr-teal;
+}
+.hero__right-wrapper{
+    width: 600px;
+}
+@media (max-width: 1005px){
+    .hero{ 
+        gap: 40px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hero__left-wrapper {
+        max-width: 80%;
+    }
+}
+@media (max-width:680px){
+    .hero-section{
+    margin-bottom: 100px;
+}
+    .hero{
+        gap: 10px;
+        margin: 0 auto;
+        align-items: start;
+        justify-content: center;
+    }
+    .hero__left-wrapper{
+        width: 100%;
+    }
+    .hero__title {
+    @include TextStyle($color:$clr-dark-black,$size:30px,$weight:700,$height:60px,$letter:0px,$bottom:16px)
+}
+    .hero__text {
+        @include TextStyle($color:$clr-dark-black,$size:18px,$weight:400,$height:28px,$letter:0px,$bottom:32px)
+    }
+    .hero__right-wrapper{
+        text-align: center;
+    }
+    .hero__right-wrapper>img{
+        width: 338px;
+        height: 310px;
+    }
+    .hero__button-get-started {
+        padding: 15px 25px;
+}
+}

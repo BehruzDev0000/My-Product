@@ -1,0 +1,73 @@
+.site-header {
+    padding: 19px 0px;
+    margin-bottom: 25px;
+}
+.header{
+    @include Display($items:center,$justify:space-between,$gap:0px)
+}
+
+.header__logo-wrapper>a {
+    @include Display($items:center,$justify:start,$gap:16px)
+}
+.logo-text {
+    @include TextStyle($color:$clr-dark-black,$size:30px,$weight:700,$height:28px,$letter:0px,$bottom:0px)
+}
+.header__right-wrapper {
+    @include Display($items:center,$justify:start,$gap:24px)
+}
+
+.header__menu-list {
+     @include Display($items:center,$justify:start,$gap:24px)
+}
+.header__menu_link {
+    @include TextStyle($color:$clr-dark-black,$size:16px,$weight:500,$height:28px,$letter:0px,$bottom:0px)
+}
+.header__menu-item:nth-child(1)>a {
+    font-weight: 600;
+}
+.header__right-sign {
+    @include Display($items:center,$justify:start,$gap:24px)
+}
+.header__right-sign-in {
+    @include BtnStyle($padding:10px 24px,$bg-color:transparent,$clr:$clr-dark-blue,$border:1px solid #BCD0E5,$radius:4px);
+    @include TextStyle($color:$clr-dark-blue,$size:16px,$weight:600,$height:100%,$letter:0px,$bottom:0px)
+}
+.header__right-sign-up {
+     @include BtnStyle($padding:10px 24px,$bg-color:$clr-teal,$clr:$clr-white,$border:1px solid transparent,$radius:4px);
+     @include TextStyle($color:$clr-white,$size:16px,$weight:600,$height:100%,$letter:0px,$bottom:0px);
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $clr-teal;
+        color:$clr-teal
+    }
+}
+.header__menu-icon{
+    display: none;
+}
+
+@media (max-width:951px){
+    .header__right-sign{
+        display: none;
+    }
+    .header__dark-lite-mode{
+        display: none;
+    }
+    .header__menu-list{
+        gap: 45px;
+    }
+}
+@media (max-width:680px){
+    .site-header{
+       box-shadow: 0px -2px 8px 0px #00000040;
+       margin-bottom: 29px;
+    }
+    .header{
+        width: 100%;
+    }
+    .header__menu-list{
+        display: none;
+    }
+    .header__menu-icon{
+        display: block;
+    }
+}
