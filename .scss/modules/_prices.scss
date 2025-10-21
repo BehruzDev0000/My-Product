@@ -1,75 +1,115 @@
-// .prices-section {
-//     margin-bottom: 150px;
-// }
-// .prices {
-// }
-// .pricess__title-wrapper {
-//     text-align: center;
-//     margin-bottom: 50px;
-// }
-// .pricess__title {
-//     @include TextStyle($color:$clr-dark-black,$size:34px,$weight:700,$height:100%,$letter:0px,$bottom:8px)
-// }
-// .pricess__text {
-// @include TextStyle($color:$clr-dark-black,$size:16px,$weight:500,$height:100%,$letter:0px,$bottom:0px)
-// }
-// .pricess__card-wrapper {
-
-// }
-// .prices__list {
-//     @include Display($items:center,$justify:start,$gap:71px);
-//     flex-wrap: wrap;
-// }
-// .prices__item {
-//     box-shadow: 0px 2px 8px 0px #00000040;
-//     width: 300px;
-//     padding: 24px 75px 32px 73px;
-//     text-align: center;
-//     margin: 0 auto;
-//     border-radius: 8px;
-// }
-// .prices__item:nth-child(2){
-//     background-color: #02897A
-// }
-// .item {
-// }
-// .price__item_plan {
-//     @include TextStyle($color:$clr-dark-black,$size:24px,$weight:700,$height:40px,$letter:0px,$bottom:8px)
-// }
-// .price__item-text {
-//     @include TextStyle($color:$clr-dark-black,$size:16px,$weight:400,$height:40px,$letter:0px,$bottom:16px)
-// }
-// .item__price {
-//     display: flex;
-//     align-items: center;
-//     gap: 8px;
-// }
-// .item__price--month-wrapper{
-//     display: flex;
-//     align-items: start;
-//     flex-direction: column;
-//     justify-content: start;
-// }
-// .item__price-value {
-//     @include TextStyle($color:$clr-dark-black,$size:76px,$weight:700,$height:100px,$letter:0.2px,$bottom:0px)
-// }
-// .item__price-currency {
-//         @include TextStyle($color:$clr-dark-black,$size:24px,$weight:700,$height:20px,$letter:0.1px,$bottom:4px)
-// }
-// .item__price-month {
-//         @include TextStyle($color:$clr-dark-black,$size:16px,$weight:400,$height:19px,$letter:0.1px,$bottom:0px)
-// }
-// .items__list {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 16px;
-// }
-// .items__item {
-// }
-// .items__list-item {
-//      @include TextStyle($color:$clr-dark-black,$size:16px,$weight:500,$height:22px,$letter:0.2px,$bottom:0px)
-// }
-// .price__btn {
-// }
-// .price__btn-white {
-// }
+.prices-section {
+    margin-bottom: 150px;
+}
+.pricess__title-wrapper {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.pricess__title {
+    @include TextStyle($color:$clr-dark-black,$size:34px,$weight:700,$height:100%,$letter:0px,$bottom:8px)
+}
+.pricess__text {
+@include TextStyle($color:$clr-dark-black,$size:16px,$weight:500,$height:100%,$letter:0px,$bottom:0px)
+}
+.prices__list {
+    @include Display($items:center,$justify:start,$gap:69px);
+    flex-wrap: wrap;
+}
+.prices__item {
+    box-shadow: 0px 2px 8px 0px #00000040;
+    width: 300px;
+    padding: 24px 75px 32px 73px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.prices__item:nth-child(2){
+    background-color: #02897A
+}
+.price__item_plan {
+    @include TextStyle($color:$clr-dark-black,$size:24px,$weight:700,$height:40px,$letter:0px,$bottom:8px)
+}
+.price__item-text {
+    @include TextStyle($color:$clr-dark-black,$size:16px,$weight:400,$height:40px,$letter:0px,$bottom:16px)
+}
+.item__price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.item__price--month-wrapper{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+}
+.item__price-value {
+    @include TextStyle($color:$clr-dark-black,$size:76px,$weight:700,$height:100px,$letter:0.2px,$bottom:0px)
+}
+.item__price-currency {
+        @include TextStyle($color:$clr-dark-black,$size:24px,$weight:700,$height:20px,$letter:0.1px,$bottom:4px)
+}
+.item__price-month {
+        @include TextStyle($color:$clr-light-gray,$size:16px,$weight:400,$height:19px,$letter:0.1px,$bottom:0px)
+}
+.very-light{
+    color: $clr-very-light-gray;
+}
+.items__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+.teal{
+    color: $clr-teal;
+}
+.items__list-item {
+     @include TextStyle($color:$clr-dark-black,$size:16px,$weight:500,$height:22px,$letter:0.2px,$bottom:0px)
+}
+.price__btn {
+    @include BtnStyle($padding:11px 18px 11px 19px,$bg-color:$clr-teal,$clr:$clr-white,$border:1px solid  transparent,$radius:8px)
+}
+.price__btn-white {
+    background-color: $clr-white;
+    color: $clr-teal;
+}
+.white{
+    color: white;
+}
+@media (max-width:950px){
+    .prices-section{
+        margin-bottom: 125px;
+    }
+    .pricess__title-wrapper{
+        margin-bottom: 62px;
+    }
+    .prices__list{
+        gap: 50px;
+    }
+    .prices__item{
+        width: 45%;
+    }
+    .item__price{
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:704px){
+     .prices-section{
+        margin-bottom: 100px;
+    }
+    .pricess__title-wrapper{
+        margin-bottom: 74px;
+    }
+    .prices__list{
+        gap: 32px;
+    }
+    .prices__item{
+        width: 90%;
+    }
+    .item__price{
+        justify-content: center;
+        align-items: center;
+    }
+}

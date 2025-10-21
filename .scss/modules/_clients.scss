@@ -1,28 +1,76 @@
-// .clients-section {
-// }
-// .container {
-// }
-// .clients {
-// }
-// .clients__title-wrapper {
-// }
-// .clients__title {
-// }
-// .clients__text {
-// }
-// .clients__list-wrapper {
-// }
-// .cliets__list {
-// }
-// .clients__item {
-// }
-// .clients__item-text {
-// }
-// .clients__item-info-wrapper {
-// }
-// .clients__item-info {
-// }
-// .clients__item-name {
-// }
-// .clients__item-position {
-// }
+.clients-section {
+    margin-bottom: 150px;
+}
+.clients__title-wrapper {
+    width: 537px;
+    margin:  0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.clients__title {
+     @include TextStyle($color:$clr-dark-black,$size:34px,$weight:700,$height:57px,$letter:0.2px,$bottom:8px);
+}
+.clients__text {
+     @include TextStyle($color:$clr-dark-black,$size:16px,$weight:500,$height:28px,$letter:0.2px,$bottom:0px);
+}
+.cliets__list {
+    @include Display($items:start,$justify:space-between,$gap:0px);
+}
+.clients__item {
+    width: 300px;
+    border-radius: 5px;
+    padding: 26px;
+    border: 1px solid #DEDEDE
+}
+.rating-icon{
+    margin-bottom: 36px;
+}
+.clients__item-text {
+     @include TextStyle($color:$clr-dimgray,$size:16px,$weight:400,$height:28px,$letter:0.2px,$bottom:16px);
+}
+.clients__item-info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.clients__item-name {
+     @include TextStyle($color:$clr-teal,$size:16px,$weight:400,$height:28px,$letter:0.2px,$bottom:0px);
+}
+.clients__item-position {
+    @include TextStyle($color:$clr-dark-navy,$size:16px,$weight:400,$height:24px,$letter:0.2px,$bottom:0px);
+}
+@media (max-width:990px){
+    .clients-section {
+        margin-bottom: 125px;   
+    }
+    .clients__title-wrapper{
+        width: 70%;
+    }
+    .cliets__list{
+        justify-content: center;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 48px;
+    }
+    .clients__item{
+        width: 45%;
+    }
+}
+@media (max-width:650px){
+     .clients-section {
+        margin-bottom: 125px;   
+    }
+    .clients__title-wrapper{
+        width: 70%;
+    }
+    .cliets__list{
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .clients__item{
+        width: 100%;
+    }
+}

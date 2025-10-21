@@ -1,14 +1,55 @@
-// .banner-section {
-// }
-// .container {
-// }
-// .banner {
-// }
-// .banner__wrapper {
-// }
-// .banner__title-wrapper {
-// }
-// .banner__title {
-// }
-// .banner__btn {
-// }
+.banner-section {
+    margin-bottom: 150px;
+}
+.banner__wrapper {
+    background-color: $clr-teal;
+    border-radius: 32px;
+    padding: 0px 36px 0px 51px;
+    max-width: 968px;
+    @include  Display($items:start,$justify:space-between,$gap:0px)
+}
+.banner__title-wrapper {
+    max-width: 510px;
+    margin-top: 49px;
+}
+.banner__title {
+    @include TextStyle($color:$clr-white,$size:32px,$weight:600,$height:150%,$letter:0px,$bottom:49px)
+}
+.banner__btn {
+    @include BtnStyle($padding:13px 35px 7px 32px,$bg-color:$clr-white,$clr:$clr-teal,$border:1px solid transparent,$radius:8px);
+    margin-bottom: 56px;
+}
+@media (max-width:860px){
+    .banner-section{
+        margin-bottom: 150px;
+    }
+    .banner__wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin :0 auto;
+        gap: 30px;
+    }
+    .banner__title-wrapper{
+        text-align: center;
+    }
+    .banner__btn{
+        margin-bottom: 0px;
+    }
+}
+@media (max-width:670px){
+    .banner-section{
+        margin-bottom: 100px;
+    }
+    .banner__wrapper{
+        width: 100%;
+        padding: 0px;
+    }
+    .banner__title-wrapper{
+        padding: 17px 22px 0px;
+    }
+    .banner-image{
+        padding: 0px 10px 10px 10px;
+    }
+}

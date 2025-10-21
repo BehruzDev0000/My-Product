@@ -67,8 +67,9 @@
     .hero__text {
         @include TextStyle($color:$clr-dark-black,$size:18px,$weight:400,$height:28px,$letter:0px,$bottom:32px)
     }
+
     .hero__right-wrapper>img{
-        max-width: 338px;
+        max-width: 100%;
         max-height: 310px;
     }
     .hero__button-get-started {

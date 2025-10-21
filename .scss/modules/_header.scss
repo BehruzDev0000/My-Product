@@ -28,13 +28,22 @@
 .header__right-sign {
     @include Display($items:center,$justify:start,$gap:24px)
 }
+.changed-btn:hover{
+        background-color: $clr-dark-blue;
+        color: $clr-white;
+        border :1px solid white;
+}
 .header__right-sign-in {
     @include BtnStyle($padding:10px 24px,$bg-color:transparent,$clr:$clr-dark-blue,$border:1px solid #BCD0E5,$radius:4px);
-    @include TextStyle($color:$clr-dark-blue,$size:16px,$weight:600,$height:100%,$letter:0px,$bottom:0px)
+    @include TextStyle($color:$clr-dark-blue,$size:16px,$weight:600,$height:100%,$letter:0px,$bottom:0px);
+    pointer-events: none;
+   
 }
+
 .header__right-sign-up {
      @include BtnStyle($padding:10px 24px,$bg-color:$clr-teal,$clr:$clr-white,$border:1px solid transparent,$radius:4px);
      @include TextStyle($color:$clr-white,$size:16px,$weight:600,$height:100%,$letter:0px,$bottom:0px);
+      
     &:hover {
         background-color: transparent;
         border: 1px solid $clr-teal;
